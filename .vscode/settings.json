@@ -2,7 +2,7 @@
   // see https://code.visualstudio.com/docs/languages/json#_json-schemas-and-settings
   "json.schemas": [
     {
-      "fileMatch": ["/*.json", "!/package.json"],
+      "fileMatch": ["/*.json"],
       // see https://github.com/renovatebot/renovate/issues/5411
       "url": "https://docs.renovatebot.com/renovate-schema.json"
     }
