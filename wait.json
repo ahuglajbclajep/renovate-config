@@ -1,0 +1,14 @@
+{
+  "extends": [":prNotPending"],
+  "prNotPendingHours": 72,
+  "dependencyDashboard": true,
+  "major": {
+    "stabilityDays": 7
+  },
+  "minor": {
+    "stabilityDays": 4
+  },
+  "patch": {
+    "stabilityDays": 2
+  }
+}

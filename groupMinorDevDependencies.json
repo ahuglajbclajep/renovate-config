@@ -1,0 +1,9 @@
+{
+  "packageRules": [
+    {
+      "groupName": "devDependencies (minor)",
+      "depTypeList": ["devDependencies"],
+      "updateTypes": ["minor"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeBranch",
+    ":maintainLockFilesMonthly",
+    ":label(renovate)"
+  ],
+  "npm": {
+    "rangeStrategy": "bump"
+  }
+}

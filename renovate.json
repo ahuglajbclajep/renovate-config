@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "github>ahuglajbclajep/renovate-config:base",
+    "github>ahuglajbclajep/renovate-config:wait",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "packageRules": [
+    {
+      "extends": [
+        "github>ahuglajbclajep/renovate-config:groupMinorDependencies"
+      ],
+      "schedule": ["before 8am on monday"]
+    },
+    {
+      "extends": [
+        "github>ahuglajbclajep/renovate-config:groupMinorDevDependencies"
+      ],
+      "schedule": ["before 8am on tuesday"]
+    }
+  ]
+}
