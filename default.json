@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "github>ahuglajbclajep/renovate-config:base",
+    "github>ahuglajbclajep/renovate-config:wait",
+    "github>ahuglajbclajep/renovate-config:groupMinorDependencies",
+    "github>ahuglajbclajep/renovate-config:groupMinorDevDependencies",
+    ":timezone(Asia/Tokyo)"
+  ],
+  "minor": {
+    "schedule": ["before 8am on monday"]
+  }
+}

@@ -6,9 +6,9 @@
     "stabilityDays": 7
   },
   "minor": {
-    "stabilityDays": 4
+    "stabilityDays": 3
   },
   "patch": {
-    "stabilityDays": 2
+    "stabilityDays": 3
   }
 }
