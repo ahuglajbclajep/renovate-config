@@ -57,14 +57,15 @@ See also:
 {
   "extends": [":prNotPending"],
   "prNotPendingHours": 72,
+  "dependencyDashboard": true,
   "major": {
-    "stabilityDays": 7
+    "stabilityDays": 4
   },
   "minor": {
-    "stabilityDays": 3
+    "stabilityDays": 2
   },
   "patch": {
-    "stabilityDays": 3
+    "stabilityDays": 2
   }
 }
 ```
