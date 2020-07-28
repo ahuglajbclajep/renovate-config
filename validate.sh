@@ -1,4 +1,6 @@
-#! /bin/bash
+#! /bin/bash -e
+
+cd "$(dirname "$0")"
 
 npx -q -p renovate -c \
 'for conf in *.json; do
