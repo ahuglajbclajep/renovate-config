@@ -55,9 +55,8 @@ See also:
 
 ```json
 {
-  "extends": [":prNotPending"],
+  "extends": [":prNotPending", ":dependencyDashboard"],
   "prNotPendingHours": 72,
-  "dependencyDashboard": true,
   "major": {
     "stabilityDays": 4
   },
