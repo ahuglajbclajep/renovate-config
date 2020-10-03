@@ -8,6 +8,26 @@
 }
 ```
 
+If you have enabled [branch protection](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-reviews-for-pull-requests) to prevent direct `push` to the `master` branch, add the following settings and also introduce [renovate-approve bot](https://github.com/apps/renovate-approve).
+
+```diff
+{
+  "extends": ["github>ahuglajbclajep/renovate-config"],
++ "packageRules": [
++   {
++     "groupName": "patches",
++     "updateTypes": ["patch"],
++     "schedule": ["before 8am on monday"]
++   }
++ ]
+}
+```
+
+See also:
+
+- <https://github.com/renovatebot/config-help/issues/748>
+- <https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-branch-restrictions>
+
 ## Presets
 
 ### `github>ahuglajbclajep/renovate-config`
@@ -81,7 +101,7 @@ See also:
 {
   "packageRules": [
     {
-      "groupName": "dependencies (minor)",
+      "groupName": "dependencies",
       "depTypeList": ["dependencies"],
       "updateTypes": ["minor"]
     }
@@ -95,7 +115,7 @@ See also:
 {
   "packageRules": [
     {
-      "groupName": "devDependencies (minor)",
+      "groupName": "dev dependencies",
       "depTypeList": ["devDependencies"],
       "updateTypes": ["minor"]
     }

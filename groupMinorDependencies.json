@@ -1,7 +1,7 @@
 {
   "packageRules": [
     {
-      "groupName": "dependencies (minor)",
+      "groupName": "dependencies",
       "depTypeList": ["dependencies"],
       "updateTypes": ["minor"]
     }
