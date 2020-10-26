@@ -1,5 +1,8 @@
 name: validate renovate configs
-on: push
+on:
+  push:
+    paths:
+      - "*.json"
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -7,5 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
       - run: ./validate.sh
